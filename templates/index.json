@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "home_shell": {
+      "type": "home-shell",
+      "settings": {
+        "heading": "Build the right box for the water you fish.",
+        "text": "This is the clean Shopify development shell. We will build the real homepage here section by section.",
+        "button_label": "Build Your Box",
+        "button_link": ""
+      }
+    }
+  },
+  "order": ["home_shell"]
+}
