@@ -1,0 +1,25 @@
+<section class="bb-home-shell">
+  <div class="bb-home-shell__inner">
+    <p class="bb-home-shell__eyebrow">BAITBOX</p>
+    <h1>{{ section.settings.heading }}</h1>
+    <p>{{ section.settings.text }}</p>
+    {% if section.settings.button_label != blank %}
+      <a class="bb-button" href="{{ section.settings.button_link | default: routes.root_url }}">{{ section.settings.button_label }}</a>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "BAITBOX Home Shell",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Build the right box for the water you fish." },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "This is the clean Shopify development shell. We will build the real homepage here section by section." },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Build Your Box" },
+    { "type": "url", "id": "button_link", "label": "Button link" }
+  ],
+  "presets": [
+    { "name": "BAITBOX Home Shell" }
+  ]
+}
+{% endschema %}
