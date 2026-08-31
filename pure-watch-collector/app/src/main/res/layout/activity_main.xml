@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PURE WATCH"
+            android:textColor="#111111"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.18" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Collector"
+            android:textColor="#111111"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="第一版只读取奢当家当前界面可访问文字，不抓登录密码、不绕过网络安全。先抓 20–50 条用于校准。"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="#F5F5F5"
+            android:padding="16dp"
+            android:text="状态：等待设置"
+            android:textColor="#111111"
+            android:textSize="15sp" />
+
+        <Button android:id="@+id/accessibilityButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="1. 开启辅助功能" />
+        <Button android:id="@+id/openSdjButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="2. 打开奢当家" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="本次最多采集条数" android:textColor="#111111" android:textSize="14sp" />
+        <EditText android:id="@+id/maxItemsEdit" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" android:text="50" />
+
+        <Button android:id="@+id/startAutoButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="自动进入并采集" />
+        <Button android:id="@+id/startCurrentButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="从当前页面采集" />
+        <Button android:id="@+id/stopButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="停止采集" />
+        <Button android:id="@+id/exportButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="导出 JSON 到下载目录" />
+        <Button android:id="@+id/clearButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="清空本地采集结果" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp"
+            android:text="建议第一次：先手动进入「同行市场 → 腕表 → 最近更新」，再回到本工具点“从当前页面采集”。如果能稳定抓到 20–50 条，我们再把解析和每小时自动运行做成第二版。"
+            android:textColor="#777777"
+            android:textSize="13sp" />
+    </LinearLayout>
+</ScrollView>
