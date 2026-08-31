@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pure Watch Collector</string>
+    <string name="accessibility_description">仅在奢当家中读取你当前账号正常可见的界面文字，并执行点击和滚动用于库存采集。不会读取账号密码。</string>
+</resources>
